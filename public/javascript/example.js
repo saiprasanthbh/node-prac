@@ -1,6 +1,3 @@
-console.log('hi from javascript client side!!!')
-
-
 
 // getData=(event)=>{
 
