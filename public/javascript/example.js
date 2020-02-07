@@ -26,7 +26,7 @@ console.log(res.value)
     document.querySelector('#message-2').textContent=''
 
 
-    fetch('http://localhost:5000/weather/?address='+ result).then((response) => response.json()).then((data)=>{
+    fetch('/weather/?address='+ result).then((response) => response.json()).then((data)=>{
 if(data.error)
 {
     document.querySelector('#message-1').textContent=data.error

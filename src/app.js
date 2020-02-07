@@ -6,6 +6,8 @@
  const Forecast=require('./utils/Forecast')
  const Geocode=require('./utils/Geocode')
 
+ const port=process.env.PORT || 3000
+
  app.use(express.static(path.join(__dirname,'../public')))
 
  app.set('view engine','hbs')
@@ -51,5 +53,5 @@ app.get('',(req,res)=>{
      res.render('about',{title:'About',temperature:20,name:'Prasanth',address:req.query.address})
  })
 
- app.listen(5000,(error,response)=>{console.log('server is running on port 5000')})
+ app.listen(port,(error,response)=>{console.log('server is running on port 5000')})
 
