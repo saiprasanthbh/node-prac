@@ -53,5 +53,5 @@ app.get('',(req,res)=>{
      res.render('about',{title:'About',temperature:20,name:'Prasanth',address:req.query.address})
  })
 
- app.listen(port,(error,response)=>{console.log('server is running on port 5000')})
+ app.listen(port,(error,response)=>{console.log('server is running on port'+port)})
 
